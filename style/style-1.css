@@ -1,0 +1,96 @@
+:root {
+    --Color-Main-Default: #574ae2;
+    --Color-Main-Hover: #1F4DFF;
+    --Color-Main-Active: #0025D5;
+    --Color-Secondary-Default: #C3C3C3;
+    --Color-Secondary-Hover: #9E9E9E;
+    --Color-Secondary-Active: #FFFFFF;
+    
+}
+
+.button {
+  font-size: 14px;
+  background-color: var(--Color-Main-Default);
+  color: white;
+  border: 2px solid;
+  border-radius: 1px;
+  padding: 10px 32px;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.bsm {
+  font-size: 12px;
+  padding: 6px 24px;
+}
+
+.bmed {
+  font-size: 14px;
+  padding: 10px 32px;
+}
+
+.bxl {
+  font-size: 16px;
+  padding: 18px 36px;
+}
+
+.button-primary {
+  color: white;
+  background-color: var(--Color-Main-Default);
+  border: 2px solid var(--Color-Main-Default);
+}
+
+.button-primary:hover {
+  color: var(--Color-Secondary-Active);
+  background-color: var(--Color-Main-Hover);
+  border: 2px solid var(--Color-Main-Hover);
+}
+
+.button-primary:active {
+  color: var(--Color-Main-Active);
+  transition: 0.1s;
+  background-color: var(--Color-Secondary-Active);
+  border: 2px solid var(--Color-Main-Active);
+}
+
+.button-secondary {
+  color: white;
+  background-color: #5b5b5b;
+  border: 2px solid #5b5b5b;
+}
+
+.button-secondary:hover {
+  color: white;
+  background-color: #101010;
+  border: 2px solid #5b5b5b;
+}
+
+.button-secondary:active {
+  color: #5b5b5b;
+  transition: 0.1s;
+  background-color: white;
+  border: 2px solid #5b5b5b;
+}
+
+.button-tertiary {
+  color: white;
+  background-color: #5b5b5b;
+  border: 2px solid #5b5b5b;
+}
+
+.button-tertiary:hover {
+  color: white;
+  background-color: #101010;
+  border: 2px solid #5b5b5b;
+}
+
+.button-tertiary:active {
+  color: #5b5b5b;
+  transition: 0.1s;
+  background-color: white;
+  border: 2px solid #5b5b5b;
+}
