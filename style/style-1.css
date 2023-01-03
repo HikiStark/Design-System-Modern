@@ -1,12 +1,30 @@
 :root {
-    --Color-Main-Default: #574ae2;
-    --Color-Main-Hover: #1F4DFF;
-    --Color-Main-Active: #0025D5;
-    --Color-Secondary-Default: #C3C3C3;
-    --Color-Secondary-Hover: #9E9E9E;
-    --Color-Secondary-Active: #FFFFFF;
-    
+  --Color-Main-Default: #4b3ee0;
+  --Color-Main-Hover: #1d147b;
+  --Color-Main-Active: #3d1fc2;
+  --Color-Secondary-Default: #a5a5a5;
+  --Color-Secondary-Hover: #7f7f7f;
+  --Color-Secondary-Active: #ffffff;
+  --Color-Teritary-Default: var(--Color-Main-Default);
+  --Color-Teritary-Hover: var(--Color-Main-Hover);
+  --Color-Teritary-Active: var(--Color-Main-Active);
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  /* margin: 0; */
+}
+
+a{
+  text-decoration: none;
+}
+
+/* --------------------------------------------- Buttons --------------------------------------------- */
 
 .button {
   font-size: 14px;
@@ -58,39 +76,113 @@
 }
 
 .button-secondary {
-  color: white;
-  background-color: #5b5b5b;
-  border: 2px solid #5b5b5b;
+  color: var(--Color-Secondary-Active);
+  background-color: var(--Color-Secondary-Default);
+  border: 2px solid var(--Color-Secondary-Default);
 }
 
 .button-secondary:hover {
   color: white;
-  background-color: #101010;
-  border: 2px solid #5b5b5b;
+  background-color: var(--Color-Secondary-Hover);
+  border: 2px solid var(--Color-Secondary-Hover);
 }
 
 .button-secondary:active {
-  color: #5b5b5b;
+  color: var(--Color-Secondary-Default);
   transition: 0.1s;
-  background-color: white;
-  border: 2px solid #5b5b5b;
+  background-color: var(--Color-Secondary-Active);
+  border: 2px solid var(--Color-Secondary-Default);
 }
 
 .button-tertiary {
-  color: white;
-  background-color: #5b5b5b;
-  border: 2px solid #5b5b5b;
+  color: var(--Color-Main-Default);
+  background-color: var(--Color-Secondary-Active);
+  border: 2px solid var(--Color-Main-Default);
 }
 
 .button-tertiary:hover {
   color: white;
-  background-color: #101010;
-  border: 2px solid #5b5b5b;
+  background-color: var(--Color-Main-Default);
+  border: 2px solid var(--Color-Main-Default);
 }
 
 .button-tertiary:active {
-  color: #5b5b5b;
   transition: 0.1s;
-  background-color: white;
-  border: 2px solid #5b5b5b;
+  color: var(--Color-Secondary-Active);
+  background-color: var(--Color-Main-Hover);
+  border: 2px solid var(--Color-Main-Hover);
 }
+
+/* --------------------------------------------- Navigation Bar Top --------------------------------------------- */
+
+/* .Navbar-Top{
+  overflow: hidden;
+  max-height: 48px;
+  justify-content: space-between; 
+}
+
+.Navbar-Logo{
+  max-height: 48px;
+  max-width: 180px;
+  padding-left: 10px;
+  padding-right: 20px;
+  background-color: var(--Color-Main-Default);
+  display: inline-block;
+}
+
+.Navbar-Logo-Pic{
+  height: 48px;
+  display: inline-block;
+}
+
+.Navbar-Logo-Pic img{
+  height: 48px;
+}
+
+.Navbar-Logo-Name{
+  height: 48px;
+  display: inline-block;
+  line-height: 10px;
+  vertical-align:top;
+  margin-left: 10px;
+}
+
+.Navbar-Logo-Name p{
+  color: #ffffff;
+  line-height: normal;
+  display: inline-block;
+}
+*/
+
+ul{
+  list-style: none;
+}
+
+li, a, p{
+  font-size: 16px;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.Navbar-Links{
+  list-style: none;
+}
+
+.Navbar-Links li{
+  display: inline-block;
+}
+
+.Navbar-Links li a{
+  transition: all 0.3s ease 0s;
+}
+
+.Navbar-Links li a:hover{
+  color: #1d147b;
+}
+
+
